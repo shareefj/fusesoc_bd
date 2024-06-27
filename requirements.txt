@@ -1,0 +1,2 @@
+fusesoc
+edalize @ git+https://github.com/dominicdoty/edalize.git@fix_vivado_bd

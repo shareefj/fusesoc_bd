@@ -1,0 +1,26 @@
+CAPI=2:
+name: ::top
+
+filesets:
+  rtl:
+    depend:
+      - ::ps7
+    files:
+      - rtl/top.sv: {file_type: systemVerilogSource}
+
+targets:
+  default: &default
+    flags:
+      no_export: "true"
+    filesets:
+      - rtl
+    toplevel: top
+
+  synth:
+    <<: *default
+    default_tool: vivado
+
+    tools:
+      vivado:
+        part: xc7z030ffg676-2
+

@@ -1,0 +1,11 @@
+hw/ip/ps7/ps7.*
+!hw/ip/ps7/ps7.srcs
+!hw/ip/ps7/ps7.srcs/sources_1
+!hw/ip/ps7/ps7.xpr
+
+*.log
+*.jou
+vivado.*
+vivado_*
+build/
+.venv
